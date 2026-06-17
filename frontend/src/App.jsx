@@ -8,6 +8,11 @@ function App() {
   const [count1, setCount1] = useState(0)
   const [count2, setCount2] = useState(0)
 
+  const resetBoth = () => {
+    setCount1(0);
+    setCount2(0);
+  }
+
   return (
     <>
       <section id="center">
@@ -35,6 +40,13 @@ function App() {
           onClick={() => setCount2((count) => count - 1)}
         >
           Count is {count2}
+        </button>
+        <button
+          type="button"
+          className="counter"
+          onClick={resetBoth}
+        >
+          RESET
         </button>
       </section>
 
