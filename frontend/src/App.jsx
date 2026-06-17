@@ -5,7 +5,8 @@ import heroImg from './assets/hero.png'
 import './App.css'
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [count1, setCount1] = useState(0)
+  const [count2, setCount2] = useState(0)
 
   return (
     <>
@@ -24,9 +25,16 @@ function App() {
         <button
           type="button"
           className="counter"
-          onClick={() => setCount((count) => count + 1)}
+          onClick={() => setCount1((count) => count + 1)}
         >
-          Count is {count}
+          Count is {count1}
+        </button>
+        <button
+          type="button"
+          className="counter"
+          onClick={() => setCount2((count) => count - 1)}
+        >
+          Count is {count2}
         </button>
       </section>
 
