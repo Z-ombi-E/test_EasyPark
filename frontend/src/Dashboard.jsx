@@ -1,5 +1,8 @@
 function Dashboard(){
-    return(<></>);
+    return(
+        <div> <h1>this is thewjans dashboard</h1></div>
+
+    );
 }
 
 export default Dashboard;
